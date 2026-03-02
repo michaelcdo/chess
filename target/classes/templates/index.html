@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Chess Example</title>
+	<link rel="stylesheet" th:href="@{/css/chess.css}">
+	<script type="text/javascript" th:src="@{/vendors/jquery/jquery-3.7.1.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/chess.js}"></script>
+</head>
+<body>
+	<div th:insert="fragments/board-fragment :: board-fragment(${linhas}, ${colunas}, ${board})" id="div-board"></div>
+</body>
+</html>

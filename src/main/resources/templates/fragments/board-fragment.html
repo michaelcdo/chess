@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="board-fragment(linhas, colunas, board)">
+	<input type="hidden" id="gameId" th:value="${gameId}">
+    <table class="board">
+    	<tbody>
+			<tr th:each="linha : ${linhas}">
+				<td th:each="coluna : ${colunas}" th:data-position="${coluna.descricao + linha.descricao}">
+					<img th:if="${board[coluna.descricao + linha.descricao] != null}"
+					th:src="${board[coluna.descricao + linha.descricao].iconUrl}" class="piece"/>
+					<span class="position"
+					th:text="${coluna.descricao + linha.descricao}"></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

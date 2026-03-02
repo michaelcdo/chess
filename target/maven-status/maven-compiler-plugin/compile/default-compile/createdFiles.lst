@@ -1,0 +1,8 @@
+michael\oliveira\chess\enums\LinhaEnum.class
+michael\oliveira\chess\core\BoardService.class
+michael\oliveira\chess\ServletInitializer.class
+michael\oliveira\chess\enums\TeamEnum.class
+michael\oliveira\chess\controller\InicioController.class
+michael\oliveira\chess\support\ChessUtils.class
+michael\oliveira\chess\ChessApplication.class
+michael\oliveira\chess\enums\ColunaEnum.class
